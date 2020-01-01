@@ -6,11 +6,11 @@ repositories {
 }
 
 dependencies {
-	testCompile 'junit:junit:4.+',
-		'org.hamcrest:hamcrest-core:1.+',
-		'org.hamcrest:hamcrest-library:1.+',
-		'org.mockito:mockito-core:2.+',
-		'org.assertj:assertj-core:3.+'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'
+	testImplementation 'org.hamcrest:hamcrest:2.2'
+	testCompile 'org.mockito:mockito-core:2.+'
+	testCompile 'org.assertj:assertj-core:3.+'
 }
 
 task buildSrcFolders {
@@ -24,4 +24,8 @@ task buildSrcFolders {
 }
 
 tasks.eclipse.dependsOn buildSrcFolders
+// tasks.build.dependsOn buildSrcFolders
 
+test {
+    useJUnitPlatform()
+}
