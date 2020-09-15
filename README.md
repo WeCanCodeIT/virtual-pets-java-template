@@ -37,9 +37,3 @@ A word about our grading, we will be evaluating your projects on five different 
 - Clean Code
 - Agile/Team Development Practices
 - Use of Version Control/Git
-The grading will consist of 5 different levels of mastery:
-- Complete Mastery
-- Excellent Mastery
-- Adequate Mastery
-- Needs Work
-- Unsatisfactory
